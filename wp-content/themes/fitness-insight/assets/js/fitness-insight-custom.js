@@ -29,5 +29,5 @@ jQuery(window).scroll(function () {
 });
 
 jQuery(window).on('load', function () {
-	jQuery(".preloader").delay(2000).fadeOut("slow");
+	jQuery(".preloader").delay(250).fadeOut("fast");
 });
