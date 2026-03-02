@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page not found</title>
+  <script>
+    var base = '/';
+    var path = window.location.pathname.replace(base, '');
+    sessionStorage.setItem('redirect', path);
+    window.location.replace(base);
+  </script>
+</head>
+
+<body>
+  <p>Redirecting&hellip;</p>
+</body>
+
+</html>
