@@ -2302,6 +2302,117 @@ http://flickity.metafizzy.co
     #content[tabindex="-1"]:focus {
       outline: 0;
     }
+
+    .location-cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1200px;
+      align-items: start;
+      justify-content: center;
+    }
+
+    .location-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none !important;
+      border: 1px solid #f0f0f0;
+    }
+
+    .location-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .location-card-content {
+      padding: 24px;
+      text-align: center;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+    }
+
+    .location-card-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    .location-card-city {
+      font-size: 18px;
+      color: #111;
+      margin: 0 0 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .location-card-address {
+      font-size: 14px;
+      color: #666;
+      margin: 0 0 20px;
+      line-height: 1.6;
+      min-height: 44px;
+    }
+
+    .location-card-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f8f8f8;
+      color: #333 !important;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+    }
+
+    .location-card:hover .location-card-btn {
+      background: #111;
+      color: #fff !important;
+      border-color: #111;
+    }
+
+    /* Reset text styles on white cards */
+    .location-card * {
+      background: transparent !important;
+    }
+
+    @media (max-width: 1024px) {
+      .location-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .location-cards-container {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+    }
   </style>
   <link href="../wp-content/plugins/wp-google-maps/lib/ol.css" id="wpgmza-ol-base-style-css" media="all"
     rel="stylesheet" type="text/css" />
@@ -2411,89 +2522,70 @@ http://flickity.metafizzy.co
               </header>
               <div class="entry-content">
                 <p>
-                <div
-                  class="wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-12 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1">
-                  <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
-                    <div
-                      class="wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-6 column1-desktop-grid__row-1 column2-desktop-grid__span-6 column2-desktop-grid__start-7 column2-desktop-grid__row-1 column1-tablet-grid__span-4 column1-tablet-grid__row-1 column2-tablet-grid__span-4 column2-tablet-grid__start-5 column2-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 column2-mobile-grid__span-4 column2-mobile-grid__row-2 wp-block-jetpack-layout-gutter__nowrap wp-block-jetpack-layout-gutter__none">
-                      <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
-                        <div class="wp-block-cover is-light" style="min-height:430px;aspect-ratio:unset;"><img alt=""
-                            class="wp-block-cover__image-background wp-image-2814" data-object-fit="cover"
-                            decoding="async" height="2560" sizes="(max-width: 1920px) 100vw, 1920px"
-                            src="../wp-content/uploads/2025/03/IMG_0079-scaled.jpeg"
-                            srcset="../wp-content/uploads/2025/03/IMG_0079-scaled.jpeg 1920w, ../wp-content/uploads/2025/03/IMG_0079-225x300.jpeg 225w, ../wp-content/uploads/2025/03/IMG_0079-768x1024.jpeg 768w, ../wp-content/uploads/2025/03/IMG_0079-1152x1536.jpeg 1152w, ../wp-content/uploads/2025/03/IMG_0079-1536x2048.jpeg 1536w"
-                            width="1920" /><span aria-hidden="true"
-                            class="wp-block-cover__background has-background-dim"
-                            style="background-color:#848c96"></span>
-                          <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                            <p class="has-text-align-center has-white-color has-text-color has-large-font-size">
-                              <strong><a data-id="264" data-type="page" href="../lanse/index.htm"><mark
-                                    class="has-inline-color has-white-color"
-                                    style="background-color:rgba(0, 0, 0, 0)">L’Anse</mark></a></strong>
-                            </p>
-                            <p class="has-text-align-center"><strong><mark class="has-inline-color has-white-color"
-                                  style="background-color:rgba(0, 0, 0, 0)">15 S. Main Street, L’Anse, MI
-                                  49946</mark></strong></p>
-                          </div>
-                        </div>
-                        <div class="wp-block-cover" style="min-height:429px;aspect-ratio:unset;"><img alt=""
-                            class="wp-block-cover__image-background wp-image-2736" data-object-fit="cover"
-                            decoding="async" height="1920" sizes="(max-width: 2560px) 100vw, 2560px"
-                            src="../wp-content/uploads/2025/02/IMG_2486-scaled.jpeg"
-                            srcset="../wp-content/uploads/2025/02/IMG_2486-scaled.jpeg 2560w, ../wp-content/uploads/2025/02/IMG_2486-300x225.jpeg 300w, ../wp-content/uploads/2025/02/IMG_2486-1024x768.jpeg 1024w, ../wp-content/uploads/2025/02/IMG_2486-768x576.jpeg 768w, ../wp-content/uploads/2025/02/IMG_2486-1536x1152.jpeg 1536w, ../wp-content/uploads/2025/02/IMG_2486-2048x1536.jpeg 2048w"
-                            width="2560" /><span aria-hidden="true"
-                            class="wp-block-cover__background has-background-dim"
-                            style="background-color:#6e757b"></span>
-                          <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                            <p class="has-text-align-center has-white-color has-text-color has-large-font-size"><mark
-                                class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"><a
-                                  href="../newberry/index.htm"><strong>Newberry</strong></a></mark></p>
-                            <p class="has-text-align-center"><strong><mark class="has-inline-color has-white-color"
-                                  style="background-color:rgba(0, 0, 0, 0)">13788 M-28, Newberry , MI
-                                  49868</mark></strong></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
-                        <div class="wp-block-cover is-light"><img alt=""
-                            class="wp-block-cover__image-background wp-image-506" data-object-fit="cover"
-                            decoding="async" height="1921" sizes="(max-width: 2560px) 100vw, 2560px"
-                            src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg"
-                            srcset="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg 2560w, ../wp-content/uploads/2021/11/DJI_0078-edited-300x225.jpg 300w, ../wp-content/uploads/2021/11/DJI_0078-edited-1024x768.jpg 1024w, ../wp-content/uploads/2021/11/DJI_0078-edited-768x576.jpg 768w, ../wp-content/uploads/2021/11/DJI_0078-edited-1536x1152.jpg 1536w, ../wp-content/uploads/2021/11/DJI_0078-edited-2048x1537.jpg 2048w"
-                            width="2560" /><span aria-hidden="true"
-                            class="wp-block-cover__background has-background-dim"></span>
-                          <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                            <p class="has-text-align-center has-white-color has-text-color has-large-font-size"><a
-                                data-id="262" data-type="page" href="../manistique/index.htm"><mark
-                                  class="has-inline-color has-white-color"
-                                  style="background-color:rgba(0, 0, 0, 0)"><strong>Manistique</strong></mark></a></p>
-                            <p class="has-text-align-center"><strong><mark class="has-inline-color has-white-color"
-                                  style="background-color:rgba(0, 0, 0, 0)">215 Oak Street, Manistique, MI
-                                  49854</mark></strong></p>
-                          </div>
-                        </div>
-                        <div class="wp-block-cover"><img alt="" class="wp-block-cover__image-background wp-image-506"
-                            data-object-fit="cover" decoding="async" height="1921"
-                            sizes="(max-width: 2560px) 100vw, 2560px"
-                            src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg"
-                            srcset="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg 2560w, ../wp-content/uploads/2021/11/DJI_0078-edited-300x225.jpg 300w, ../wp-content/uploads/2021/11/DJI_0078-edited-1024x768.jpg 1024w, ../wp-content/uploads/2021/11/DJI_0078-edited-768x576.jpg 768w, ../wp-content/uploads/2021/11/DJI_0078-edited-1536x1152.jpg 1536w, ../wp-content/uploads/2021/11/DJI_0078-edited-2048x1537.jpg 2048w"
-                            width="2560" /><span aria-hidden="true"
-                            class="wp-block-cover__background has-background-dim"></span>
-                          <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                            <p class="has-text-align-center has-white-color has-text-color has-large-font-size">
-                              <strong><a data-id="262" data-type="page" href="../houghton/index.htm"><mark
-                                    class="has-inline-color has-white-color"
-                                    style="background-color:rgba(0, 0, 0, 0)">Houghton</mark></a></strong>
-                            </p>
-                            <p class="has-text-align-center">47420 M-26, Houghton, MI 49931</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <h1 class="wp-block-heading has-text-align-center has-cyan-bluish-gray-color has-text-color"
                   style="font-size:50px">Our Locations</h1>
+
+                <div class="location-cards-container">
+                  <!-- Manistique -->
+                  <a href="../manistique/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Manistique"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Manistique</h2>
+                      <p class="location-card-address">215 Oak Street<br>Manistique, MI 49854</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
+
+                  <!-- Newberry -->
+                  <a href="../newberry/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2025/02/IMG_2486-scaled.jpeg" alt="Newberry"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Newberry</h2>
+                      <p class="location-card-address">13788 M-28<br>Newberry, MI 49868</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
+
+                  <!-- Gladstone -->
+                  <a href="https://www.facebook.com/yooperfitnessgladstone" class="location-card" target="_blank">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Gladstone"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Gladstone</h2>
+                      <p class="location-card-address">13 N 9th St<br>Gladstone, MI 49837</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
+
+                  <!-- Houghton -->
+                  <a href="../houghton/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Houghton"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Houghton</h2>
+                      <p class="location-card-address">47420 M-26<br>Houghton, MI 49931</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
+
+                  <!-- L'Anse -->
+                  <a href="../lanse/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2025/03/IMG_0079-scaled.jpeg" alt="L’Anse"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">L’Anse</h2>
+                      <p class="location-card-address">15 S. Main Street<br>L’Anse, MI 49946</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
+                </div>
                 <div aria-hidden="true" class="wp-block-spacer" style="height:100px"></div>
                 <div class="wpgmza_map" data-map-id="1" data-maps-engine="open-layers"
                   data-settings='{"id":"1","map_title":"Yooper Fitness","map_width":"100","map_height":"400","map_start_lat":"46.43849574221056","map_start_lng":"-85.55290697834313","map_start_location":"45.950464398418106,-109.81550500000003","map_start_zoom":"8","default_marker":"","type":"0","alignment":"4","directions_enabled":"0","styling_enabled":"0","styling_json":"","active":"0","kml":"","bicycle":"0","traffic":"0","dbox":"0","dbox_width":"","listmarkers":"0","listmarkers_advanced":"0","filterbycat":"0","ugm_enabled":"0","ugm_category_enabled":"0","fusion":"","map_width_type":"%","map_height_type":"px","mass_marker_support":"0","ugm_access":"0","order_markers_by":"0","order_markers_choice":"0","show_user_location":"0","default_to":"","other_settings":{"map_type":1,"sl_stroke_color":"","sl_fill_color":"","sl_stroke_opacity":"","sl_fill_opacity":"","transport_layer":false,"action":"wpgmza_save_map","redirect_to":"\/wp-admin\/admin-post.php","map_id":"1","http_referer":"\/wp-admin\/admin.php?page=wp-google-maps-menu&amp;amp;override=1&amp;amp;action=edit&amp;amp;map_id=1","wpgmza_id":"1","wpgmza_start_location":"46.43849574221056,-85.55290697834313","wpgmza_start_zoom":"8","store_locator_enabled":false,"store_locator_search_area":"radial","wpgmza_store_locator_radius_style":"legacy","wpgmza_store_locator_default_radius":"10","store_locator_auto_area_max_zoom":"","store_locator_distance":false,"wpgmza_store_locator_position":false,"store_locator_show_distance":false,"store_locator_category":false,"wpgmza_store_locator_use_their_location":false,"wpgmza_store_locator_bounce":false,"wpgmza_sl_animation":null,"wpgmza_store_locator_hide_before_search":false,"store_locator_query_string":"","store_locator_default_address":"","store_locator_name_search":false,"store_locator_name_string":"","store_locator_not_found_message":"","wpgmza_map_align":"1","jump_to_nearest_marker_on_initialization":false,"automatically_pan_to_users_location":false,"override_users_location_zoom_level":false,"override_users_location_zoom_levels":"","show_distance_from_location":false,"map_max_zoom":"21","map_min_zoom":"0","click_open_link":false,"fit_maps_bounds_to_markers":false,"fit_maps_bounds_to_markers_after_filtering":false,"hide_point_of_interest":false,"wpgmza_zoom_on_marker_click":false,"wpgmza_zoom_on_marker_click_slider":"","close_infowindow_on_map_click":false,"disable_lightbox_images":false,"use_Raw_Jpeg_Coordinates":false,"disable_polygon_info_windows":false,"enable_marker_ratings":false,"only_load_markers_within_viewport":false,"iw_primary_color":"#000000","iw_accent_color":"#000000","iw_text_color":"#000000","wpgmza_listmarkers_by":"0","wpgmza_marker_listing_position":false,"zoom_level_on_marker_listing_override":false,"zoom_level_on_marker_listing_click":"","datatable_no_result_message":"","remove_search_box_datables":false,"dataTable_pagination_style":null,"datatable_search_string":"","datatable_result_start":"","datatable_result_of":"","datatable_result_to":"","datatable_result_total":"","datatable_result_show":"","datatable_result_entries":"","wpgmza_savemap":"Save Map \u00bb","store_locator_location_placeholder":"","enable_marker_labels":false,"zoom_level_mobile_override_enabled":false,"zoom_level_mobile_override":"","marker_listing_disable_zoom":false}}'
@@ -2561,8 +2653,10 @@ http://flickity.metafizzy.co
                     </div>
                     <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
                       <p><strong><span class="has-inline-color has-white-color">Locations</span></strong></p>
-                      <p><span class="has-inline-color has-cyan-bluish-gray-color">Manistique Address: 215 Oak
-                          Street<br />L’Anse Address: 15 S Main Street</span></p>
+                      <p><span class="has-inline-color has-cyan-bluish-gray-color">
+                          Manistique: 215 Oak Street | Newberry: 13788 M-28<br />
+                          Gladstone: 13 N 9th St | L’Anse: 15 S Main Street | Houghton: 47420 M-26
+                        </span></p>
                       <div aria-hidden="true" class="wp-block-spacer" style="height:20px"></div>
                       <p>L'Anse:</p>
                       <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
