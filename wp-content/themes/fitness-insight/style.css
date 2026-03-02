@@ -2077,3 +2077,41 @@ video {
 	    left: 15%;
 	}
 }
+
+@keyframes floating-button-pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+	100% { transform: scale(1); }
+}
+
+.floating-signup {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: linear-gradient(to right, #f2bb1e , #fd5e48);
+	color: #fff !important;
+	padding: 15px 30px;
+	border-radius: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+	z-index: 10000;
+	text-decoration: none !important;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	animation: floating-button-pulse 2s infinite;
+}
+
+.floating-signup:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+	.floating-signup {
+		bottom: 15px;
+		right: 15px;
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+}
