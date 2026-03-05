@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: Fitness Insight
 Theme URI: https://www.ovationthemes.com/wordpress/free-fitness-wordpress-theme/
 Author: pewilliams
@@ -647,7 +647,7 @@ a:active {
     border-radius: 0;
 }
 .fixed .gb_navigation {
-    width: 1140px;
+    width: 1250px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -681,7 +681,7 @@ ul.list_nav {
 }
 .gb_nav_menu li a {
     color: #fff;
-    padding: 5px 15px;
+    padding: 5px 8px;
     display: block;
     font-size: 14px;
     font-weight: 600;
@@ -2077,3 +2077,4 @@ video {
 	    left: 15%;
 	}
 }
+
