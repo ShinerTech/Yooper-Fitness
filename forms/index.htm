@@ -2363,51 +2363,128 @@ http://flickity.metafizzy.co
                 <h1 class="entry-title"><span>Forms</span></h1>
               </header>
               <div class="entry-content">
-                <p>
-                <div
-                  class="wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-12 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 wp-block-jetpack-layout-gutter__nowrap wp-block-jetpack-layout-gutter__none">
-                  <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
-                    <div class="wp-block-cover has-background-dim"><img alt=""
-                        class="wp-block-cover__image-background wp-image-200" data-object-fit="cover"
-                        data-object-position="51% 59%" decoding="async" height="1707"
-                        sizes="(max-width: 2560px) 100vw, 2560px"
-                        src="../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-scaled.jpg"
-                        srcset="../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-scaled.jpg 2560w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-300x200.jpg 300w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-1024x683.jpg 1024w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-768x512.jpg 768w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-1536x1024.jpg 1536w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-2048x1365.jpg 2048w, ../wp-content/uploads/2021/11/kelly-sikkema-LNlzd-Y7orw-unsplash-1568x1045.jpg 1568w"
-                        style="object-position:51% 59%" width="2560" />
-                      <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                        <p class="has-text-align-center" style="font-size:65px"><strong>Forms</strong></p>
-                      </div>
-                    </div>
+                <style>
+                  .forms-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 30px;
+                    margin: 40px 0;
+                  }
+
+                  .form-card {
+                    background: #fff;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 8px;
+                    padding: 30px;
+                    text-align: center;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                  }
+
+                  .form-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                  }
+
+                  .form-icon {
+                    font-size: 40px;
+                    color: #000080;
+                    margin-bottom: 20px;
+                  }
+
+                  .form-title {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #222;
+                    margin-bottom: 15px;
+                  }
+
+                  .form-desc {
+                    font-size: 15px;
+                    color: #666;
+                    margin-bottom: 25px;
+                    line-height: 1.5;
+                  }
+
+                  .form-btn {
+                    display: inline-block;
+                    background: #000080;
+                    color: #fff !important;
+                    padding: 12px 25px;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: background 0.2s;
+                  }
+
+                  .form-btn:hover {
+                    background: #006ccc;
+                    text-decoration: none;
+                  }
+
+                  .forms-header {
+                    text-align: center;
+                    margin-bottom: 40px;
+                  }
+
+                  .forms-header h2 {
+                    color: #000080;
+                    font-size: 36px;
+                    font-weight: 700;
+                  }
+
+                  .forms-header p {
+                    font-size: 18px;
+                    color: #555;
+                  }
+                </style>
+
+                <div class="forms-header">
+                  <h2>Download Client Forms</h2>
+                  <p>Please download, print, and fill out the necessary forms below before your first visit.</p>
+                </div>
+
+                <div class="forms-grid">
+                  <!-- Card 1 -->
+                  <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-file-pdf"></i></div>
+                    <div class="form-title">Youth Medical Waiver</div>
+                    <div class="form-desc">Required for all members under the age of 18. Must be signed by a parent or
+                      legal guardian.</div>
+                    <a href="../wp-content/uploads/2021/11/Youth-Medical-Waiver.pdf" target="_blank"
+                      class="form-btn">Download PDF</a>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-file-medical"></i></div>
+                    <div class="form-title">Medical Waiver Form</div>
+                    <div class="form-desc">Standard medical waiver and release of liability for all new Yooper Fitness
+                      members.</div>
+                    <a href="../wp-content/uploads/2021/11/Medical-Waiver-Form.pdf" target="_blank"
+                      class="form-btn">Download PDF</a>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-file-signature"></i></div>
+                    <div class="form-title">Membership Agreement</div>
+                    <div class="form-desc">Details of your Yooper Fitness membership, billing, and cancellation
+                      policies.</div>
+                    <a href="../wp-content/uploads/2021/11/Membership-Agreement.pdf" target="_blank"
+                      class="form-btn">Download PDF</a>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-file-contract"></i></div>
+                    <div class="form-title">Policies and Procedures</div>
+                    <div class="form-desc">Gym rules, etiquette, and general procedures to keep our facilities safe and
+                      clean.</div>
+                    <a href="../wp-content/uploads/2021/11/Membership-Policies-and-Procedures.pdf" target="_blank"
+                      class="form-btn">Download PDF</a>
                   </div>
                 </div>
-                <div aria-hidden="true" class="wp-block-spacer" style="height:20px"></div>
-                <div
-                  class="wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-12 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1">
-                  <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
-                    <div aria-hidden="true" class="wp-block-spacer" style="height:100px"></div>
-                    <p class="has-text-align-center has-cyan-bluish-gray-color has-text-color has-medium-font-size">
-                      <strong><a data-id="https://yooperfitness.net/wp-content/uploads/2021/11/Youth-Medical-Waiver.pdf"
-                          data-type="URL" href="../wp-content/uploads/2021/11/Youth-Medical-Waiver.pdf"
-                          rel="noreferrer noopener" target="_blank">Youth Medical
-                          Waiver</a></strong><br /><strong><br /><a
-                          data-id="https://yooperfitness.net/wp-content/uploads/2021/11/Medical-Waiver-Form.pdf"
-                          data-type="URL" href="../wp-content/uploads/2021/11/Medical-Waiver-Form.pdf"
-                          rel="noreferrer noopener" target="_blank">Medical Waiver Form</a></strong><br /><strong><a
-                          data-id="https://yooperfitness.net/wp-content/uploads/2021/11/Medical-Waiver-Form.pdf"
-                          data-type="URL" href="../wp-content/uploads/2021/11/Medical-Waiver-Form.pdf"
-                          rel="noreferrer noopener" target="_blank"><br /></a><a
-                          data-id="https://yooperfitness.net/wp-content/uploads/2021/11/Membership-Agreement.pdf"
-                          data-type="URL" href="../wp-content/uploads/2021/11/Membership-Agreement.pdf"
-                          rel="noreferrer noopener" target="_blank">Membership
-                          Agreement</a></strong><br /><strong><br /><a
-                          data-id="https://yooperfitness.net/wp-content/uploads/2021/11/Membership-Policies-and-Procedures.pdf"
-                          data-type="URL" href="../wp-content/uploads/2021/11/Membership-Policies-and-Procedures.pdf"
-                          rel="noreferrer noopener" target="_blank">Policies and Procedures</a></strong>
-                    </p>
-                  </div>
-                </div>
-                <div aria-hidden="true" class="wp-block-spacer" style="height:174px"></div>
-                </p>
               </div>
             </article>
           </main>
