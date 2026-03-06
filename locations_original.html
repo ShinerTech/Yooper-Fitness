@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Forms – Yooper Fitness</title>
+  <title>Locations – Yooper Fitness</title>
   <meta content="max-image-preview:large" name="robots" />
   <link href="//stats.wp.com" rel="dns-prefetch" />
   <link href="//fonts.googleapis.com" rel="dns-prefetch" />
   <link href="../feed/index.htm" rel="alternate" title="Yooper Fitness » Feed" type="application/rss+xml" />
   <link href="../comments/feed/index.htm" rel="alternate" title="Yooper Fitness » Comments Feed"
     type="application/rss+xml" />
-  <link href="../wp-json/oembed/1.0/embed-12" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" />
-  <link href="../wp-json/oembed/1.0/embed-13" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" />
+  <link href="../wp-json/oembed/1.0/embed-8" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" />
+  <link href="../wp-json/oembed/1.0/embed-9" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" />
   <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
     img:is([sizes=auto i], [sizes^="auto," i]) {
       contain-intrinsic-size: 3000px 1500px
@@ -717,6 +717,33 @@
 
     /*# sourceURL=https://yooperfitness.net/wp-includes/blocks/cover/style.min.css */
   </style>
+  <style id="wp-block-heading-inline-css" type="text/css">
+    h1:where(.wp-block-heading).has-background,
+    h2:where(.wp-block-heading).has-background,
+    h3:where(.wp-block-heading).has-background,
+    h4:where(.wp-block-heading).has-background,
+    h5:where(.wp-block-heading).has-background,
+    h6:where(.wp-block-heading).has-background {
+      padding: 1.25em 2.375em
+    }
+
+    h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
+      rotate: 180deg
+    }
+
+    /*# sourceURL=https://yooperfitness.net/wp-includes/blocks/heading/style.min.css */
+  </style>
   <style id="wp-block-paragraph-inline-css" type="text/css">
     .is-small-text {
       font-size: .875em
@@ -1313,6 +1340,26 @@
 
     /*# sourceURL=https://yooperfitness.net/wp-includes/blocks/spacer/style.min.css */
   </style>
+  <style id="classic-theme-styles-inline-css" type="text/css">
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none
+    }
+
+    /*# sourceURL=/wp-includes/css/classic-themes.min.css */
+  </style>
   <link href="../wp-content/plugins/layout-grid/style.css" id="jetpack-layout-grid-css" media="all" rel="stylesheet"
     type="text/css" />
   <style id="global-styles-inline-css" type="text/css">
@@ -1621,30 +1668,10 @@
 
     /*# sourceURL=global-styles-inline-css */
   </style>
-  <style id="classic-theme-styles-inline-css" type="text/css">
-    /*! This file is auto-generated */
-    .wp-block-button__link {
-      color: #fff;
-      background-color: #32373c;
-      border-radius: 9999px;
-      box-shadow: none;
-      text-decoration: none;
-      padding: calc(.667em + 2px) calc(1.333em + 2px);
-      font-size: 1.125em
-    }
-
-    .wp-block-file__button {
-      background: #32373c;
-      color: #fff;
-      text-decoration: none
-    }
-
-    /*# sourceURL=/wp-includes/css/classic-themes.min.css */
-  </style>
   <link href="../css" id="fitness-insight-fonts-css" media="all" rel="stylesheet" type="text/css" />
-  <link href="../wp-content/themes/fitness-insight/assets/css/bootstrap-1.css" id="bootstrap-style-css" media="all"
+  <link href="../wp-content/themes/fitness-insight/assets/css/bootstrap.css" id="bootstrap-style-css" media="all"
     rel="stylesheet" type="text/css" />
-  <link href="../wp-content/themes/fitness-insight/style-1.css" id="fitness-insight-style-css" media="all"
+  <link href="../wp-content/themes/fitness-insight/style.css" id="fitness-insight-style-css" media="all"
     rel="stylesheet" type="text/css" />
   <style id="fitness-insight-style-inline-css" type="text/css">
     .custom-logo-link img {
@@ -1674,9 +1701,9 @@
 
     /*# sourceURL=fitness-insight-style-inline-css */
   </style>
-  <link href="../wp-content/themes/fitness-insight/assets/css/fontawesome-all-1.css" id="font-awesome-style-css"
+  <link href="../wp-content/themes/fitness-insight/assets/css/fontawesome-all.css" id="font-awesome-style-css"
     media="all" rel="stylesheet" type="text/css" />
-  <link href="../wp-content/themes/fitness-insight/assets/css/blocks-1.css" id="fitness-insight-block-style-css"
+  <link href="../wp-content/themes/fitness-insight/assets/css/blocks.css" id="fitness-insight-block-style-css"
     media="all" rel="stylesheet" type="text/css" />
   <link href="../css-1" id="fitness-insight-headings-fonts-css" media="all" rel="stylesheet" type="text/css" />
   <link href="../css-2" id="fitness-insight-body-fonts-css" media="all" rel="stylesheet" type="text/css" />
@@ -1691,10 +1718,10 @@
   <script id="bootstrap.js-js" src="../wp-content/themes/fitness-insight/assets/js/bootstrap.js"
     type="text/javascript"></script>
   <link href="../wp-json/index.htm" rel="https://api.w.org/" />
-  <link href="../wp-json/wp/v2/pages/44" rel="alternate" title="JSON" type="application/json" />
+  <link href="../wp-json/wp/v2/pages/445" rel="alternate" title="JSON" type="application/json" />
   <link href="../xmlrpc.php" rel="EditURI" title="RSD" type="application/rsd+xml" />
-  <link href="../forms/index.htm" rel="canonical" />
-  <link href="../forms/index.htm" rel="shortlink" />
+  <link href="../locations/index.htm" rel="canonical" />
+  <link href="../locations/index.htm" rel="shortlink" />
   <style>
     img#wpstats {
       display: none
@@ -1846,11 +1873,585 @@ http://flickity.metafizzy.co
       background-color: rgba(0, 64, 122, .88);
     }
   </style>
-  <link href="../wp-content/themes/fitness-insight/assets/css/site-custom.css" rel="stylesheet" type="text/css" />
+  <style id="wp-custom-css" type="text/css">
+    .page .entry-title {
+      display: none;
+    }
+
+
+    /**Form Label Color**/
+
+    div#contact-form-15 label {
+      color: #fff !important;
+    }
+
+    div#contact-form-35 label {
+      color: #fff !important;
+    }
+
+    div#contact-form-659 label {
+      color: #fff !important;
+    }
+
+    div#contact-form-664 label {
+      color: #fff !important;
+    }
+
+    div#contact-form-576 label {
+      color: #fff !important;
+    }
+
+    div#contact-form-732 label {
+      color: #fff !important;
+    }
+
+    /*------------- Header -------------*/
+
+    .page-template-custom-home-page .wrap_figure {
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .page-template-custom-home-page #header {
+      background: transparent;
+    }
+
+    #header {
+      background-image: linear-gradient(to right, #A6CEFE, #00407A, #00002b);
+    }
+
+    .top_header {
+      padding: 10px 0;
+      text-align: right;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .page-template-custom-home-page .top_header span i {
+      color: #fe7d15
+    }
+
+    .top_header span i {
+      margin: 0 10px;
+      border: solid 1px #e7e7e7;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    .top_header span {
+      border-right: solid 2px #e5e5e5;
+      padding-right: 15px;
+    }
+
+    .top_header strong {
+      color: #fff;
+    }
+
+    .page-template-custom-home-page .top_header strong {
+      color: #fff;
+    }
+
+    .top_header a {
+      margin-left: 15px;
+    }
+
+    .links {
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    .links i {
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .page-template-custom-home-page .links i.fab.fa-facebook-f {
+      color: #4266b3;
+    }
+
+    .page-template-custom-home-page .links i.fab.fa-twitter {
+      color: #3eabee;
+    }
+
+    .page-template-custom-home-page .links i.fab.fa-youtube {
+      color: #ff4444;
+    }
+
+    .page-template-custom-home-page .links i.fab.fa-instagram {
+      color: #fa4280;
+    }
+
+    /* ----- header navigation ----- */
+
+
+    .page-template-custom-home-page .menu_header {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .admin-bar .fixed {
+      margin-top: 32px;
+    }
+
+    .menu_header.fixed {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 9999;
+      border-radius: 0;
+    }
+
+    .fixed .gb_navigation {
+      width: 1250px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .fixed .gb_nav_menu ul {
+      text-align: left;
+    }
+
+    .menu_header {
+      background: #000080;
+      padding: 15px;
+      border-radius: 50px;
+    }
+
+    #gb_responsive {
+      display: fixed;
+    }
+
+    ul.list_nav {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+
+    .gb_nav_menu ul {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .gb_nav_menu li {
+      display: inline-block;
+      margin: 0;
+      position: relative;
+    }
+
+    .gb_nav_menu li a {
+      color: #fff;
+      padding: 5px 8px;
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .gb_nav_menu ul li a:active,
+    .gb_nav_menu ul li a:hover {
+      color: #222222;
+    }
+
+    .gb_nav_menu ul ul {
+      display: none;
+      position: absolute;
+      background: #000080;
+      min-width: 210px;
+      z-index: 9999;
+      padding: 4px;
+    }
+
+    .gb_nav_menu ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    .gb_nav_menu ul ul a {
+      color: #fff;
+      padding: 10px;
+    }
+
+    .gb_nav_menu ul ul a:hover {
+      background: #000080;
+      color: #fff !important;
+    }
+
+    .gb_nav_menu ul ul li {
+      float: none;
+      display: block;
+      text-align: left;
+      border-left: none;
+      border-right: none !important;
+      padding: 0;
+    }
+
+    .gb_nav_menu ul ul li:last-child {
+      border-bottom: 0;
+    }
+
+    .gb_nav_menu ul li:hover>ul {
+      display: block;
+    }
+
+    .gb_nav_menu .menu>ul>li.highlight {
+      background-color: #006ccc;
+    }
+
+    .gb_nav_menu .menu>ul>li.highlight:hover {
+      background: transparent;
+    }
+
+    .sf-arrows ul .sf-with-ul {
+      padding: 10px;
+    }
+
+    .sf-arrows .sf-with-ul,
+    .topbar .sf-arrows .sf-with-ul {
+      padding: 10px 18px 10px 8px;
+    }
+
+    .sf-arrows .sf-with-ul:after {
+      content: '\f0dd';
+      position: absolute;
+      right: 0px;
+      top: 2px;
+      font-size: 18px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+    }
+
+    .topbar .sf-arrows .sf-with-ul:after {
+      font-size: 14px;
+      top: 0px;
+      right: 8px;
+    }
+
+    .sf-arrows ul .sf-with-ul:after {
+      top: 4px;
+    }
+
+    .toggle-menu,
+    a.closebtn {
+      display: none;
+    }
+
+    a {
+      color: #000080;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      color: #000080;
+      outline: 0;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .gb_navigation a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .gb_navigation.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .gb_navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    /*--------- Site Loader --------------*/
+
+    .preloader {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      position: fixed;
+      z-index: 99999;
+    }
+
+    .load {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+    }
+
+    .load hr {
+      border: 0;
+      margin: 0;
+      width: 40%;
+      height: 40%;
+      position: absolute;
+      border-radius: 50%;
+      animation: spin 2s ease infinite;
+    }
+
+    .load :first-child {
+      background: #006ccc;
+      animation-delay: -1.5s
+    }
+
+    .load :nth-child(2) {
+      background: #000080;
+      animation-delay: -1s
+    }
+
+    .load :nth-child(3) {
+      background: #006ccc;
+      animation-delay: -0.5s
+    }
+
+    .load :last-child {
+      background: #000080
+    }
+
+    @keyframes spin {
+
+      0%,
+      100% {
+        transform: translate(0)
+      }
+
+      25% {
+        transform: translate(160%)
+      }
+
+      50% {
+        transform: translate(160%, 160%)
+      }
+
+      75% {
+        transform: translate(0, 160%)
+      }
+    }
+
+    /* Accessibility */
+    /* Text meant only for screen readers. */
+    .screen-reader-text {
+      border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute !important;
+      width: 1px;
+      word-wrap: normal !important;
+      /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    }
+
+    .screen-reader-text:focus {
+      background-color: #000000;
+      border-radius: 3px;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+      clip: auto !important;
+      clip-path: none;
+      color: #21759b;
+      display: block;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: bold;
+      height: auto;
+      left: 5px;
+      line-height: normal;
+      padding: 15px 23px 14px;
+      text-decoration: none;
+      top: 5px;
+      width: auto;
+      z-index: 100000;
+      /* Above WP toolbar. */
+    }
+
+    /* Do not show the outline on the skip link target. */
+    #content[tabindex="-1"]:focus {
+      outline: 0;
+    }
+
+    .location-cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1200px;
+      align-items: start;
+      justify-content: center;
+    }
+
+    .location-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none !important;
+      border: 1px solid #f0f0f0;
+    }
+
+    .location-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .location-card-content {
+      padding: 24px;
+      text-align: center;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+    }
+
+    .location-card-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    .location-card-city {
+      font-size: 18px;
+      color: #111;
+      margin: 0 0 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .location-card-address {
+      font-size: 14px;
+      color: #666;
+      margin: 0 0 20px;
+      line-height: 1.6;
+      min-height: 44px;
+    }
+
+    .location-card-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f8f8f8;
+      color: #333 !important;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+    }
+
+    .location-card:hover .location-card-btn {
+      background: #111;
+      color: #fff !important;
+      border-color: #111;
+    }
+
+    /* Reset text styles on white cards */
+    .location-card * {
+      background: transparent !important;
+    }
+
+    @media (max-width: 1024px) {
+      .location-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .location-cards-container {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+    }
+  </style>
+  <link href="../wp-content/plugins/wp-google-maps/lib/ol.css" id="wpgmza-ol-base-style-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/open-layers.css" id="wpgmza-ol-style-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/font-awesome.min.css" id="fontawesome-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/polyfill/fa-5to4.css" id="fontawesome-polyfill-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/common.css" id="wpgmza-common-css" media="all" rel="stylesheet"
+    type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/lib/remodal.css" id="remodal-css" media="all" rel="stylesheet"
+    type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/lib/remodal-default-theme.css" id="remodal-default-theme-css"
+    media="all" rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/jquery.dataTables.min.css" id="datatables-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <link href="../wp-content/plugins/wp-google-maps/css/styles/default.css" id="wpgmza-ui-default-css" media="all"
+    rel="stylesheet" type="text/css" />
+  <style id="wpgmza-custom-iw" type="text/css">
+    /* Map Marker Info Window: Only show address */
+    .wpgmza-infowindow strong,
+    .wpgmza-infowindow .wpgmza-title,
+    .wpgmza-infowindow .wpgmza-desc,
+    .wpgmza-infowindow img {
+      display: none !important;
+    }
+
+    .wpgmza-infowindow .wpgmza-address {
+      display: block !important;
+      font-weight: 500;
+      padding: 5px 0;
+    }
+  </style>
 </head>
 
+
 <body
-  class="wp-singular page-template-default page page-id-44 custom-background wp-custom-logo wp-embed-responsive wp-theme-fitness-insight page-two-column">
+  class="wp-singular page-template-default page page-id-445 custom-background wp-custom-logo wp-embed-responsive wp-theme-fitness-insight page-two-column">
   <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
   <div class="preloader">
     <div class="load">
@@ -1907,11 +2508,13 @@ http://flickity.metafizzy.co
                           id="menu-item-55"><a href="../contact-us/index.htm">Contact Us</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"
                           id="menu-item-59"><a href="../events/index.htm">Classes &amp; Trainers</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"
-                          id="menu-item-452"><a href="../locations/index.htm">Locations</a></li>
                         <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-44 current_page_item menu-item-58"
-                          id="menu-item-58"><a aria-current="page" href="../forms/index.htm">Forms</a></li>
+                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-445 current_page_item menu-item-452"
+                          id="menu-item-452"><a aria-current="page" href="../locations/index.htm">Locations</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"
+                          id="menu-item-56"><a href="../links/index.htm">Links</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"
+                          id="menu-item-58"><a href="../forms/index.htm">Forms</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-908"
                           id="menu-item-908"><a href="../joinus/index.htm">Join Us!</a></li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://yooperfitness.store" target="_blank" rel="noopener noreferrer">Apparel Store</a></li>
@@ -1930,133 +2533,84 @@ http://flickity.metafizzy.co
       <div class="container" id="custom-a-tag">
         <div class="content-area entry-content" id="primary">
           <main class="site-main" id="main" role="main">
-            <article class="post-44 page type-page status-publish hentry" id="post-44">
+            <article class="post-445 page type-page status-publish hentry" id="post-445">
               <header class="entry-header">
-                <h1 class="entry-title"><span>Forms</span></h1>
+                <h1 class="entry-title"><span>Locations</span></h1>
               </header>
               <div class="entry-content">
-                <style>
-                  .forms-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                    gap: 30px;
-                    margin: 40px 0;
-                  }
+                <p>
+                <h1 class="wp-block-heading has-text-align-center has-cyan-bluish-gray-color has-text-color"
+                  style="font-size:50px">Our Locations</h1>
 
-                  .form-card {
-                    background: #fff;
-                    border: 1px solid #e5e5e5;
-                    border-radius: 8px;
-                    padding: 30px;
-                    text-align: center;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-                    transition: transform 0.2s, box-shadow 0.2s;
-                  }
+                <div class="location-cards-container">
+                  <!-- Manistique -->
+                  <a href="../manistique/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Manistique"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Manistique</h2>
+                      <p class="location-card-address">215 Oak Street<br>Manistique, MI 49854</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
 
-                  .form-card:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-                  }
+                  <!-- Newberry -->
+                  <a href="../newberry/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2025/02/IMG_2486-scaled.jpeg" alt="Newberry"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Newberry</h2>
+                      <p class="location-card-address">13788 M-28<br>Newberry, MI 49868</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
 
-                  .form-icon {
-                    font-size: 40px;
-                    color: #000080;
-                    margin-bottom: 20px;
-                  }
+                  <!-- Gladstone -->
+                  <a href="https://www.facebook.com/yooperfitnessgladstone" class="location-card" target="_blank">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Gladstone"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Gladstone</h2>
+                      <p class="location-card-address">13 N 9th St<br>Gladstone, MI 49837</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
 
-                  .form-title {
-                    font-size: 22px;
-                    font-weight: 700;
-                    color: #222;
-                    margin-bottom: 15px;
-                  }
+                  <!-- Houghton -->
+                  <a href="../houghton/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2021/11/DJI_0078-edited-scaled.jpg" alt="Houghton"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">Houghton</h2>
+                      <p class="location-card-address">47420 M-26<br>Houghton, MI 49931</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
 
-                  .form-desc {
-                    font-size: 15px;
-                    color: #666;
-                    margin-bottom: 25px;
-                    line-height: 1.5;
-                  }
-
-                  .form-btn {
-                    display: inline-block;
-                    background: #000080;
-                    color: #fff !important;
-                    padding: 12px 25px;
-                    border-radius: 50px;
-                    text-decoration: none;
-                    font-weight: 600;
-                    transition: background 0.2s;
-                  }
-
-                  .form-btn:hover {
-                    background: #006ccc;
-                    text-decoration: none;
-                  }
-
-                  .forms-header {
-                    text-align: center;
-                    margin-bottom: 40px;
-                  }
-
-                  .forms-header h2 {
-                    color: #000080;
-                    font-size: 36px;
-                    font-weight: 700;
-                  }
-
-                  .forms-header p {
-                    font-size: 18px;
-                    color: #555;
-                  }
-                </style>
-
-                <div class="forms-header">
-                  <h2>Download Client Forms</h2>
-                  <p>Please download, print, and fill out the necessary forms below before your first visit.</p>
+                  <!-- L'Anse -->
+                  <a href="../lanse/index.htm" class="location-card">
+                    <img src="../wp-content/uploads/2025/03/IMG_0079-scaled.jpeg" alt="L’Anse"
+                      class="location-card-image" />
+                    <div class="location-card-content">
+                      <img src="../Images/Logo/logo.png" alt="Logo" class="location-card-logo" />
+                      <h2 class="location-card-city">L’Anse</h2>
+                      <p class="location-card-address">15 S. Main Street<br>L’Anse, MI 49946</p>
+                      <span class="location-card-btn">Visit Location</span>
+                    </div>
+                  </a>
                 </div>
-
-                <div class="forms-grid">
-                  <!-- Card 1 -->
-                  <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-file-pdf"></i></div>
-                    <div class="form-title">Youth Medical Waiver</div>
-                    <div class="form-desc">Required for all members under the age of 18. Must be signed by a parent or
-                      legal guardian.</div>
-                    <a href="../wp-content/uploads/2021/11/Youth-Medical-Waiver.pdf" target="_blank"
-                      class="form-btn">Download PDF</a>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-file-pdf"></i></div>
-                    <div class="form-title">Medical Waiver Form</div>
-                    <div class="form-desc">Standard medical waiver and release of liability for all new Yooper Fitness
-                      members.</div>
-                    <a href="../wp-content/uploads/2021/11/Medical-Waiver-Form.pdf" target="_blank"
-                      class="form-btn">Download PDF</a>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-file-pdf"></i></div>
-                    <div class="form-title">Membership Agreement</div>
-                    <div class="form-desc">Details of your Yooper Fitness membership, billing, and cancellation
-                      policies.</div>
-                    <a href="../wp-content/uploads/2021/11/Membership-Agreement.pdf" target="_blank"
-                      class="form-btn">Download PDF</a>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-file-pdf"></i></div>
-                    <div class="form-title">Policies and Procedures</div>
-                    <div class="form-desc">Gym rules, etiquette, and general procedures to keep our facilities safe and
-                      clean.</div>
-                    <a href="../wp-content/uploads/2021/11/Membership-Policies-and-Procedures.pdf" target="_blank"
-                      class="form-btn">Download PDF</a>
-                  </div>
-                </div>
+                <div aria-hidden="true" class="wp-block-spacer" style="height:100px"></div>
+                <div class="wpgmza_map" data-map-id="1" data-maps-engine="open-layers"
+                  data-settings='{"id":"1","map_title":"Yooper Fitness","map_width":"100","map_height":"400","map_start_lat":"46.50","map_start_lng":"-87.10","map_start_location":"46.50,-87.10","map_start_zoom":"7","default_marker":"","type":"0","alignment":"4","directions_enabled":"0","styling_enabled":"0","styling_json":"","active":"0","kml":"","bicycle":"0","traffic":"0","dbox":"0","dbox_width":"","listmarkers":"0","listmarkers_advanced":"0","filterbycat":"0","ugm_enabled":"0","ugm_category_enabled":"0","fusion":"","map_width_type":"%","map_height_type":"px","mass_marker_support":"0","ugm_access":"0","order_markers_by":"0","order_markers_choice":"0","show_user_location":"0","default_to":"","other_settings":{"map_type":1,"sl_stroke_color":"","sl_fill_color":"","sl_stroke_opacity":"","sl_fill_opacity":"","transport_layer":false,"action":"wpgmza_save_map","redirect_to":"\/wp-admin\/admin-post.php","map_id":"1","http_referer":"\/wp-admin\/admin.php?page=wp-google-maps-menu&amp;amp;override=1&amp;amp;action=edit&amp;amp;map_id=1","wpgmza_id":"1","wpgmza_start_location":"46.50,-87.10","wpgmza_start_zoom":"7","store_locator_enabled":false,"store_locator_search_area":"radial","wpgmza_store_locator_radius_style":"legacy","wpgmza_store_locator_default_radius":"10","store_locator_auto_area_max_zoom":"","store_locator_distance":false,"wpgmza_store_locator_position":false,"store_locator_show_distance":false,"store_locator_category":false,"wpgmza_store_locator_use_their_location":false,"wpgmza_store_locator_bounce":false,"wpgmza_sl_animation":null,"wpgmza_store_locator_hide_before_search":false,"store_locator_query_string":"","store_locator_default_address":"","store_locator_name_search":false,"store_locator_name_string":"","store_locator_not_found_message":"","wpgmza_map_align":"1","jump_to_nearest_marker_on_initialization":false,"automatically_pan_to_users_location":false,"override_users_location_zoom_level":false,"override_users_location_zoom_levels":"","show_distance_from_location":false,"map_max_zoom":"21","map_min_zoom":"0","click_open_link":false,"fit_maps_bounds_to_markers":false,"fit_maps_bounds_to_markers_after_filtering":false,"hide_point_of_interest":false,"wpgmza_zoom_on_marker_click":false,"wpgmza_zoom_on_marker_click_slider":"","close_infowindow_on_map_click":false,"disable_lightbox_images":false,"use_Raw_Jpeg_Coordinates":false,"disable_polygon_info_windows":false,"enable_marker_ratings":false,"only_load_markers_within_viewport":false,"iw_primary_color":"#000000","iw_accent_color":"#000000","iw_text_color":"#000000","wpgmza_listmarkers_by":"0","wpgmza_marker_listing_position":false,"zoom_level_on_marker_listing_override":false,"zoom_level_on_marker_listing_click":"","datatable_no_result_message":"","remove_search_box_datables":false,"dataTable_pagination_style":null,"datatable_search_string":"","datatable_result_start":"","datatable_result_of":"","datatable_result_to":"","datatable_result_total":"","datatable_result_show":"","datatable_result_entries":"","wpgmza_savemap":"Save Map \u00bb","store_locator_location_placeholder":"","enable_marker_labels":false,"zoom_level_mobile_override_enabled":false,"zoom_level_mobile_override":"","marker_listing_disable_zoom":false}}'
+                  data-shortcode-attributes='{"id":"1"}' id="wpgmza_map"
+                  style="display:block; overflow:auto; width:100%; height:400px; float:left;"></div>
+                <div aria-hidden="true" class="wp-block-spacer" style="height:100px"></div>
+                <p></p>
+                </p>
               </div>
             </article>
           </main>
@@ -2116,8 +2670,10 @@ http://flickity.metafizzy.co
                     </div>
                     <div class="wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none">
                       <p><strong><span class="has-inline-color has-white-color">Locations</span></strong></p>
-                      <p><span class="has-inline-color has-cyan-bluish-gray-color">Manistique Address: 215 Oak
-                          Street<br />L’Anse Address: 15 S Main Street</span></p>
+                      <p><span class="has-inline-color has-cyan-bluish-gray-color">
+                          Manistique: 215 Oak Street | Newberry: 13788 M-28<br />
+                          Gladstone: 13 N 9th St | L’Anse: 15 S Main Street | Houghton: 47420 M-26
+                        </span></p>
                       <div aria-hidden="true" class="wp-block-spacer" style="height:20px"></div>
                       <p>L'Anse:</p>
                       <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
@@ -2144,20 +2700,6 @@ http://flickity.metafizzy.co
                 </section>
               </div>
               <div class="widget-column footer-widget-2 col-lg-3 col-md-3">
-                <section class="widget widget_block" id="block-11">
-                  <p><strong><span class="has-inline-color has-white-color">Partners</span></strong></p>
-                  <p>
-                    <a href="https://checkout.square.site/buy/6O5BPHRNR6X6A7O6A6A6A6A6" rel="noreferrer noopener"
-                      target="_blank"><span class="has-inline-color has-vivid-cyan-blue-color">Join Yooper
-                        Fitness</span></a><br />
-                    <a href="https://www.facebook.com/MichiganMadeProductsandGifts/" rel="noreferrer noopener"
-                      target="_blank"><span class="has-inline-color has-vivid-cyan-blue-color">Michigan
-                        Made</span></a><br />
-                    <a href="https://www.europasports.com/" rel="noreferrer noopener" target="_blank"><span
-                        class="has-inline-color has-vivid-cyan-blue-color">Europa Sports Supplements</span></a><br />
-                  <a href="https://yooperfitness.store" rel="noreferrer noopener" target="_blank"><span class="has-inline-color has-vivid-cyan-blue-color">Apparel Store</span></a>
-                  </p>
-                </section>
               </div>
               <div class="widget-column footer-widget-3 col-lg-3 col-md-3">
               </div>
@@ -2180,15 +2722,46 @@ http://flickity.metafizzy.co
     <script id="jetpack-stats-js-before" type="text/javascript">
       /* <![CDATA[ */
       _stq = window._stq || [];
-      _stq.push(["view", { "v": "ext", "blog": "199499920", "post": "44", "tz": "0", "srv": "yooperfitness.net", "hp": "atomic", "ac": "3", "amp": "0", "j": "1:15.4-beta" }]);
-      _stq.push(["clickTrackerInit", "199499920", "44"]);
+      _stq.push(["view", { "v": "ext", "blog": "199499920", "post": "445", "tz": "0", "srv": "yooperfitness.net", "hp": "atomic", "ac": "3", "amp": "0", "j": "1:15.6-a.5" }]);
+      _stq.push(["clickTrackerInit", "199499920", "445"]);
       //# sourceURL=jetpack-stats-js-before
       /* ]]> */
     </script>
-    <script data-wp-strategy="defer" defer="defer" id="jetpack-stats-js" src="../e-202602.js"
+    <script data-wp-strategy="defer" defer="defer" id="jetpack-stats-js" src="../e-202609.js"
+      type="text/javascript"></script>
+    <script id="wpgmza_ol_api_call-js" src="../wp-content/plugins/wp-google-maps/lib/ol.js"
+      type="text/javascript"></script>
+    <script id="datatables-js" src="../wp-content/plugins/wp-google-maps/js/jquery.dataTables.min.js"
+      type="text/javascript"></script>
+    <script id="datatables-responsive-js" src="../wp-content/plugins/wp-google-maps/js/dataTables.responsive.js"
+      type="text/javascript"></script>
+    <script id="javascript-cookie-js" src="../wp-content/plugins/wp-google-maps/lib/jquery-cookie.js"
+      type="text/javascript"></script>
+    <script id="remodal-js" src="../wp-content/plugins/wp-google-maps/lib/remodal.min.js"
+      type="text/javascript"></script>
+    <script id="pepjs-js" src="../wp-content/plugins/wp-google-maps/lib/pep.js" type="text/javascript"></script>
+    <script id="fast-text-encoding-js" src="../wp-content/plugins/wp-google-maps/lib/text.js"
+      type="text/javascript"></script>
+    <script id="pako-js" src="../wp-content/plugins/wp-google-maps/lib/pako_deflate.min.js"
+      type="text/javascript"></script>
+    <script id="wpgmza_data-js-extra" type="text/javascript">
+      /* <![CDATA[ */
+      var wpgmza_google_api_status = { "message": "Engine is not google-maps", "code": "ENGINE_NOT_GOOGLE_MAPS" };
+      //# sourceURL=wpgmza_data-js-extra
+      /* ]]> */
+    </script>
+    <script id="wpgmza_data-js" src="../wp-content/plugins/wp-google-maps/wpgmza_data.js"
+      type="text/javascript"></script>
+    <script id="wpgmza-js-extra" type="text/javascript">
+      /* <![CDATA[ */
+      var WPGMZA_localized_data = { "adminurl": "https://yooperfitness.net/wp-admin/", "siteHash": "5b9ffb7f0c48942eaead8bc3e3fe763f", "ajaxurl": "https://yooperfitness.net/wp-admin/admin-ajax.php", "pluginDirURL": "https://yooperfitness.net/wp-content/plugins/wp-google-maps/", "ajaxnonce": "37a80b39b5", "legacyajaxnonce": "4409e76e04", "html": { "googleMapsAPIErrorDialog": "\u003Cdiv\u003E\r\n\r\n\t\u003Ch2\u003EMaps API Error\u003C/h2\u003E\r\n\t\r\n\t\u003Cdiv\u003E\r\n\t\r\n\t\t\u003Cp\u003E\r\n\t\t\tOne or more error(s) have occured attempting to initialize the Maps API:\t\t\u003C/p\u003E\r\n\t\r\n\t\t\u003Cul class=\"wpgmza-google-api-error-list\"\u003E\r\n\t\t\t\u003Cli class=\"template notice notice-error\"\u003E\r\n\t\t\t\t\u003Cspan class=\"wpgmza-message\"\u003E\u003C/span\u003E\r\n\t\t\t\t\u003Cspan class=\"wpgmza-documentation-buttons\"\u003E\r\n\t\t\t\t\t\u003Ca target=\"_blank\"\u003E\r\n\t\t\t\t\t\t\u003Ci class=\"fa\" aria-hidden=\"true\"\u003E\u003C/i\u003E\r\n\t\t\t\t\t\u003C/a\u003E\r\n\t\t\t\t\u003C/span\u003E\r\n\t\t\t\u003C/li\u003E\r\n\t\t\u003C/ul\u003E\r\n\t\r\n\t\u003C/div\u003E\r\n\t\t\t\u003Cp class=\"wpgmza-front-end-only\"\u003E\r\n\t\t\u003Ci class=\"fa fa-eye\" aria-hidden=\"true\"\u003E\u003C/i\u003E\r\n\t\tThis dialog is only visible to administrators\t\u003C/p\u003E\r\n\t\r\n\t\u003C!--\u003Cbutton data-remodal-action=\"confirm\" class=\"remodal-confirm\"\u003E\r\n\t\tDismiss\t\u003C/button\u003E--\u003E\r\n\r\n\u003C/div\u003E" }, "imageFolderURL": "https://yooperfitness.net/wp-content/plugins/wp-google-maps/images/", "resturl": "https://yooperfitness.net/wp-json/wpgmza/v1", "restnonce": "70c782ec12", "restnoncetable": { "/(polygons|polylines|circles|rectangles|pointlabels)(\\/\\d+)?/": "795fc9b2d7", "/markers(\\/\\d+)?/": "a828c3635a", "/datatables": "6bb7ce42bc" }, "settings": { "engine": "open-layers", "google_maps_api_key": false, "default_marker_icon": "https://yooperfitness.mystagingwebsite.com/wp-content/plugins/wp-google-maps/images/spotlight-poi2.png", "developer_mode": false, "user_interface_style": "default", "wpgmza_gdpr_enabled": 1, "wpgmza_gdpr_default_notice": "\u003Cp\u003E\n\tI agree for my personal data to be processed by \u003Cspan name=\"wpgmza_gdpr_company_name\"\u003E\u003C/span\u003E, for the purpose(s) of \u003Cspan name=\"wpgmza_gdpr_retention_purpose\"\u003E\u003C/span\u003E.\n\u003C/p\u003E\n\n\u003Cp\u003E\t\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\n\u003C/p\u003E\n\u003Cp\u003E\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\n\u003C/p\u003E\n\u003Cp\u003E\n\tPlease \u003Ca href=\"https://developers.google.com/maps/terms\"\u003Esee here\u003C/a\u003E and \u003Ca href=\"https://maps.google.com/help/terms_maps.html\"\u003Ehere\u003C/a\u003E for Google's terms. Please also see \u003Ca href=\"https://policies.google.com/privacy?hl=en-GB&amp;gl=uk\"\u003EGoogle's Privacy Policy\u003C/a\u003E. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\n\u003C/p\u003E", "wpgmza_gdpr_company_name": "Yooper Fitness", "wpgmza_gdpr_retention_purpose": "displaying map tiles, geocoding addresses and calculating and display directions.", "wpgmza_marker_xml_url": "https://yooperfitness.net/wp-content/uploads/wp-google-maps/", "wpgmza_maps_engine": "open-layers", "wpgmza_maps_engine_dialog_done": true, "internal_engine": "legacy", "defaultMarkerIcon": "https://yooperfitness.mystagingwebsite.com/wp-content/plugins/wp-google-maps/images/spotlight-poi2.png", "developerMode": false, "gdprCompanyName": "Yooper Fitness", "gdprDefaultNotice": "\u003Cp\u003E\n\tI agree for my personal data to be processed by \u003Cspan name=\"wpgmza_gdpr_company_name\"\u003E\u003C/span\u003E, for the purpose(s) of \u003Cspan name=\"wpgmza_gdpr_retention_purpose\"\u003E\u003C/span\u003E.\n\u003C/p\u003E\n\n\u003Cp\u003E\t\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\n\u003C/p\u003E\n\u003Cp\u003E\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\n\u003C/p\u003E\n\u003Cp\u003E\n\tPlease \u003Ca href=\"https://developers.google.com/maps/terms\"\u003Esee here\u003C/a\u003E and \u003Ca href=\"https://maps.google.com/help/terms_maps.html\"\u003Ehere\u003C/a\u003E for Google's terms. Please also see \u003Ca href=\"https://policies.google.com/privacy?hl=en-GB&amp;gl=uk\"\u003EGoogle's Privacy Policy\u003C/a\u003E. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\n\u003C/p\u003E", "gdprEnabled": 1, "gdprRetentionPurpose": "displaying map tiles, geocoding addresses and calculating and display directions.", "internalEngine": "legacy", "mapsEngineDialogDone": true, "markerXmlUrl": "https://yooperfitness.net/wp-content/uploads/wp-google-maps/", "userInterfaceStyle": "default" }, "stylingSettings": {}, "currentPage": null, "userCanAdministrator": "0", "serverCanInflate": "1", "localized_strings": { "unsecure_geolocation": "Many browsers are no longer allowing geolocation from unsecured origins. You will need to secure your site with an SSL certificate (HTTPS) or this feature may not work for your visitors", "use_my_location": "Use my location", "google_api_not_loaded": "The map cannot be initialized because the Maps API has not been loaded. Please check your settings.", "no_google_maps_api_key": "You have not entered a \u003Cb\u003EGoogle Maps API Key\u003C/b\u003E.\u003Cbr /\u003E\u003Cbr /\u003EPlease go to the your admin area, then Maps, then Settings, then the Advanced tab to \u003Ca href=\"https://yooperfitness.net/wp-admin/admin.php?page=wp-google-maps-menu-settings&highlight=wpgmza_google_maps_api_key#advanced-settings\"\u003Eenter your Google Maps API key\u003C/a\u003E.\u003Cbr /\u003E\u003Cbr /\u003EAlternatively, \u003Ca href=\"https://yooperfitness.net/wp-admin/admin.php?page=wp-google-maps-menu-settings&highlight=wpgmza_maps_engine\"\u003Echoose the Open Layers engine\u003C/a\u003E to avoid getting an API key.", "documentation": "Documentation", "api_dashboard": "API Dashboard", "verify_project": "Verify Project", "no_shape_circle": "Please create the circle first.", "no_shape_rectangle": "Please create the rectangle first.", "no_shape_polygon": "Please create the polygon first.", "no_shape_polyline": "Please create the polyline first.", "failed_to_get_address": "Failed to get address", "failed_to_create_marker": "Failed to create marker %d - this marker cannot be placed on the map.", "my_location": "My Location", "kilometers_away": "km away", "miles_away": "miles away", "import_completed": "Import completed.", "importing_please_wait": "Importing, this may take a moment...", "no_address_specified": "No address specified", "add_marker": "Add Marker", "save_marker": "Save Marker", "please_wait": "Please Wait...", "zero_results": "No results found in this location. Please try again.", "address_not_found": "This address could not be found. WP Go Maps uses a 3rd party service (eg Google) to convert addresses to geographic coordinates. Unfortunately, the service has no records for this address at present. Please try an alternative format, or manually position the marker using right click.", "geocode_fail": "Geocode failed due to technical reasons", "you_must_check_gdpr_consent": "You must check the GDPR consent box to continue", "no_gps_coordinates": "No GPS coordinates found", "fetching_directions": "Fetching directions...", "unknown_directions_service_status": "Unknown directions service status", "please_fill_out_both_from_and_to_fields": "Please fill out both the \"from\" and \"to\" fields", "no_picture_found": "No picture found", "overwrite_theme_data": "Are you sure you want to overwrite the existing theme data?", "upload_complete": "Upload Complete", "uploading_file": "Uploading file", "bulk_jpeg_media_title": "WP Go Maps - Bulk JPEG Upload", "from_your_location": "from your location", "from_searched_location": "from searched location", "yes": "Yes", "no": "No", "requires_gold_v5": "Requires WP Go Maps - Gold add-on 5.0.0 or above", "confirm_remove_duplicates": "This operation is not reversable. We recommend you take a backup before proceeding. Would you like to continue?", "invalid_theme_data": "Invalid theme data", "duplicate_custom_field_name": "Duplicate custom field names, please ensure you only add unique custom field names.", "disabled_interactions_notice": "Some interactions are disabled.", "interactions_enabled_notice": "Interactions Enabled", "disabled_interactions_button": "Re-Enable Interactions", "use_two_fingers": "Use two fingers to move the map", "use_ctrl_scroll_to_zoom": "Use ctrl + scroll to zoom the map", "geocode_was_not_successful": "Geocode was not successful for the following reason: ", "geocoding_library_notice": "Geocoding this address failed. Please check you have enabled the Geocoding API for your Google Maps API project.", "map_delete_prompt_text": "Are you sure you want to delete this map?", "map_bulk_delete_prompt_text": "Are you sure you want to delete these maps?", "general_delete_prompt_text": "Are you sure you want to delete this data?", "new_map": "New Map", "all": "All", "cloud_api_key_error_1": "Autocomplete disabled. \u003Ca href=\"https://wpgmaps.com/documentation/autocomplete-disabled/\" target=\"_BLANK\"\u003EFind out more\u003C/a\u003E." }, "api_consent_html": "\u003Cdiv class=\"wpgmza-gdpr-compliance\"\u003E\u003Cp\u003E\n\tI agree for my personal data to be processed by \u003Cspan name=\"wpgmza_gdpr_company_name\"\u003EYooper Fitness\u003C/span\u003E, for the purpose(s) of \u003Cspan name=\"wpgmza_gdpr_retention_purpose\"\u003Edisplaying map tiles, geocoding addresses and calculating and display directions.\u003C/span\u003E.\n\u003C/p\u003E\n\n\u003Cp\u003E\t\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\n\u003C/p\u003E\n\u003Cp\u003E\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\n\u003C/p\u003E\n\u003Cp\u003E\n\tPlease \u003Ca href=\"https://developers.google.com/maps/terms\"\u003Esee here\u003C/a\u003E and \u003Ca href=\"https://maps.google.com/help/terms_maps.html\"\u003Ehere\u003C/a\u003E for Google's terms. Please also see \u003Ca href=\"https://policies.google.com/privacy?hl=en-GB&gl=uk\"\u003EGoogle's Privacy Policy\u003C/a\u003E. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\n\u003C/p\u003E\n\u003Cp\u003E\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\n\u003C/p\u003E\u003Cp class='wpgmza-centered'\u003E\u003Cbutton class='wpgmza-api-consent'\u003EI agree\u003C/button\u003E\u003C/div\u003E\u003C/p\u003E", "basic_version": "9.0.44", "_isProVersion": "", "defaultMarkerIcon": "https://yooperfitness.net/wp-content/plugins/wp-google-maps/images/spotlight-poi3.png", "markerXMLPathURL": "//yooperfitness.net/wp-content/uploads/wp-google-maps/", "is_admin": "0", "locale": "en_US", "isServerIIS": "", "labelpointIcon": "https://yooperfitness.net/wp-content/plugins/wp-google-maps/images/label-point.png", "buildCode": "B.9.0.44::L.O", "postID": "445" };
+      //# sourceURL=wpgmza-js-extra
+      /* ]]> */
+    </script>
+    <script id="wpgmza-js" src="../wp-content/plugins/wp-google-maps/js/v8/wp-google-maps.min.js"
       type="text/javascript"></script>
     <script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://yooperfitness.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://yooperfitness.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
 </script>
     <script type="module">
       /* <![CDATA[ */
@@ -2214,7 +2787,6 @@ http://flickity.metafizzy.co
 </body>
 
 </html>
-
 
 
 
