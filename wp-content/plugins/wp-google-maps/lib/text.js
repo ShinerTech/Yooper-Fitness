@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright 2017 Sam Thorogood. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -185,3 +185,4 @@ scope['TextEncoder'] = FastTextEncoder;
 scope['TextDecoder'] = FastTextDecoder;
 
 }(typeof window !== 'undefined' ? window : (typeof global !== 'undefined' ? global : this)));
+

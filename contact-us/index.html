@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Yooper Fitness</title>
+
+  <!-- Design Assets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="icon" href="../Images/Logo/logo.png" type="image/png">
+
+  <style>
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      align-items: start;
+    }
+
+    .contact-form-wrapper {
+      background: var(--white);
+      padding: var(--space-md);
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(38, 66, 117, 0.1);
+    }
+
+    .info-card {
+      background: var(--primary);
+      color: var(--white);
+      padding: var(--space-md);
+      border-radius: 20px;
+      height: 100%;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-item i {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Top Info -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-contact">
+        <span><i class="fas fa-phone"></i> Manistique/Newberry/Gladstone: <a
+            href="tel:9062509348">906-250-9348</a></span>
+        <span><i class="fas fa-phone"></i> Houghton/L'Anse: <a href="tel:9062025452">906-202-5452</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:YF@YooperFitness.net">YF@YooperFitness.net</a></span>
+      </div>
+      <div class="header-social">
+        <a href="https://www.facebook.com/yooperfitness" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yooper_fitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../Images/Logo/logo.png" alt="Yooper Fitness Logo">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../about-us/index.html" class="nav-link">About Us</a>
+        <a href="../contact-us/index.html" class="nav-link active">Contact Us</a>
+        <a href="../events/index.html" class="nav-link">Classes & Trainers</a>
+        <a href="../locations/index.html" class="nav-link">Locations</a>
+        <a href="../forms/index.html" class="nav-link">Forms</a>
+        <a href="../joinus/index.html" class="nav-link">Join Us!</a>
+        <a href="https://yooperfitness.store" class="nav-link" target="_blank">Apparel Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="hero" style="height: 30vh; min-height: 250px;">
+    <div class="hero-slider">
+      <img src="../Images/Hero/VBE_1264.jpg" alt="Contact Yooper Fitness" class="active">
+    </div>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <h2 class="uppercase" style="margin-bottom: 2rem;">Send a Message</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="location">Location Preference</label>
+              <select id="location" name="location">
+                <option value="">Select a Location</option>
+                <option value="Manistique">Manistique</option>
+                <option value="Newberry">Newberry</option>
+                <option value="Gladstone">Gladstone</option>
+                <option value="L'Anse">L'Anse</option>
+                <option value="Houghton">Houghton</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="info-card">
+          <h2 class="uppercase" style="margin-bottom: 2rem; color: var(--white);">Reach Out</h2>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p><strong>Manistique Area:</strong></p>
+              <a href="tel:9062509348">(906) 250-9348</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p><strong>Houghton/L'Anse:</strong></p>
+              <a href="tel:9062025452">(906) 202-5452</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <p><strong>Email Us:</strong></p>
+              <a href="mailto:YF@YooperFitness.net">YF@YooperFitness.net</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <p><strong>Desk Hours:</strong></p>
+              <p>Varies by location. Please check our Facebook pages for current hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Phone:</p>
+          <p><a href="tel:9062509348">Manistique Area: (906) 250-9348</a></p>
+          <p><a href="tel:9062025452">Houghton/L'Anse: (906) 202-5452</a></p>
+          <p style="margin-top: 1rem;">Email: <a href="mailto:YF@YooperFitness.net">YF@YooperFitness.net</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <ul class="footer-links">
+            <li>Manistique: 215 Oak Street</li>
+            <li>Newberry: 13788 M-28</li>
+            <li>Gladstone: 13 N 9th St</li>
+            <li>L’Anse: 15 S Main Street</li>
+            <li>Houghton: 47420 M-26</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../joinus/index.html">Join Yooper Fitness</a></li>
+            <li><a href="https://www.justmichiganmade.net/" target="_blank">Michigan Made</a></li>
+            <li><a href="https://yooperfitness.store" target="_blank">Apparel Store</a></li>
+            <li><a href="../about-us/index.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/yooperfitness" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yooper_fitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Yooper Fitness. All Rights Reserved. Designed by SineTech, LLC.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <a href="../joinus/index.html" class="fab-signup">Sign Up Now!</a>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

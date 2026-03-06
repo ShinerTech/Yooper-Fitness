@@ -1,4 +1,4 @@
-.page .entry-title {
+﻿.page .entry-title {
       display: none;
     }
 
@@ -426,3 +426,4 @@
     #content[tabindex="-1"]:focus {
       outline: 0;
     }
+

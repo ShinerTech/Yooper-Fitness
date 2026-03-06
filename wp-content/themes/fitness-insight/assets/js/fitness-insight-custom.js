@@ -1,4 +1,4 @@
-jQuery(function ($) {
+﻿jQuery(function ($) {
 	"use strict";
 	jQuery('.gb_navigation > ul').superfish({
 		delay: 500,

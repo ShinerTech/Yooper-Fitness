@@ -1,4 +1,4 @@
-var mpIframeInit = false;
+﻿var mpIframeInit = false;
 function initialiseIframeResizer(run_method) {
 	// Only initialise once
 	if (mpIframeInit) return;
@@ -62,4 +62,5 @@ if (typeof jQueryX !== 'undefined') {
 		});
 	}
 }
+
 

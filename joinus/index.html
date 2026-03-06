@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us! | Yooper Fitness</title>
+
+  <!-- Design Assets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="icon" href="../Images/Logo/logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header Top Info -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-contact">
+        <span><i class="fas fa-phone"></i> Manistique/Newberry/Gladstone: <a
+            href="tel:9062509348">906-250-9348</a></span>
+        <span><i class="fas fa-phone"></i> Houghton/L'Anse: <a href="tel:9062025452">906-202-5452</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:YF@YooperFitness.net">YF@YooperFitness.net</a></span>
+      </div>
+      <div class="header-social">
+        <a href="https://www.facebook.com/yooperfitness" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yooper_fitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../Images/Logo/logo.png" alt="Yooper Fitness Logo">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../about-us/index.html" class="nav-link">About Us</a>
+        <a href="../contact-us/index.html" class="nav-link">Contact Us</a>
+        <a href="../events/index.html" class="nav-link">Classes & Trainers</a>
+        <a href="../locations/index.html" class="nav-link">Locations</a>
+        <a href="../forms/index.html" class="nav-link">Forms</a>
+        <a href="../joinus/index.html" class="nav-link active">Join Us!</a>
+        <a href="https://yooperfitness.store" class="nav-link" target="_blank">Apparel Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-slider">
+      <img src="../Images/Hero/VBE_1280.jpg" alt="Join Yooper Fitness" class="active">
+    </div>
+    <div class="hero-content">
+      <h1>Join Our Community</h1>
+      <p class="text-white">Ready to start your fitness journey? Join us today!</p>
+    </div>
+  </section>
+
+  <!-- Join Content -->
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="uppercase" style="margin-bottom: var(--space-md);">Simple 24/7 Access Memberships</h2>
+      <p style="max-width: 700px; margin: 0 auto var(--space-lg); font-size: 1.1rem;">
+        Welcome! Please complete the form below to join Yooper Fitness or log in to your account.
+        We use GymMaster for secure, 24/7 access control.
+      </p>
+
+      <div class="signup-container"
+        style="background: var(--card-bg); border-radius: 20px; box-shadow: var(--shadow-lg); overflow: hidden; margin-top: 2rem; border: 1px solid rgba(0,0,0,0.05); min-height: 600px;">
+        <!-- GymMaster Hostpage Script and Iframe -->
+        <script type="text/javascript"
+          src="https://yooperfitness.gymmasteronline.com/portal/static/js/hostpage.js"></script>
+        <iframe id="gmiframe" class="gmiframe" src="https://yooperfitness.gymmasteronline.com/portal/?logo=0"
+          width="100%" scrolling="no" frameborder="0" style="min-height: 800px;"></iframe>
+
+        <script>
+          // Script to forward URL parameters to the GymMaster iframe
+          (function () {
+            const iframe = document.getElementById('gmiframe');
+            const currentUrl = new URL(window.location.href);
+            const params = currentUrl.search;
+            if (params && iframe) {
+              const baseSrc = iframe.src.split('?')[0];
+              const baseParams = iframe.src.split('?')[1] || '';
+              // Merge parameters (parent params take precedence or append)
+              iframe.src = baseSrc + '?' + baseParams + (baseParams ? '&' : '') + params.substring(1);
+              console.log('[JoinUs] Forwarded parameters to iframe:', params);
+            }
+          })();
+        </script>
+      </div>
+
+      <div style="margin-top: 4rem;">
+        <img src="../Images/Pricing/Pricing.jpg" alt="Yooper Fitness Pricing"
+          style="max-width: 800px; width: 100%; height: auto; margin: 0 auto; border-radius: 20px; box-shadow: var(--shadow-lg);">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Phone:</p>
+          <p><a href="tel:9062509348">Manistique Area: (906) 250-9348</a></p>
+          <p><a href="tel:9062025452">Houghton/L'Anse: (906) 202-5452</a></p>
+          <p style="margin-top: 1rem;">Email: <a href="mailto:YF@YooperFitness.net">YF@YooperFitness.net</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <ul class="footer-links">
+            <li>Manistique: 215 Oak Street</li>
+            <li>Newberry: 13788 M-28</li>
+            <li>Gladstone: 13 N 9th St</li>
+            <li>L’Anse: 15 S Main Street</li>
+            <li>Houghton: 47420 M-26</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Join Yooper Fitness</a></li>
+            <li><a href="https://www.justmichiganmade.net/" target="_blank">Michigan Made</a></li>
+            <li><a href="https://yooperfitness.store" target="_blank">Apparel Store</a></li>
+            <li><a href="../about-us/index.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/yooperfitness" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yooper_fitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Yooper Fitness. All Rights Reserved. Designed by SineTech, LLC.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

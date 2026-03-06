@@ -1,4 +1,4 @@
-(function(){}());// This file is used for localization and will be deprecated in the future
+﻿(function(){}());// This file is used for localization and will be deprecated in the future
 
 function __wpgmzaMapEngineLoadedCallback(){
 	/* This doesn't do anything for the moment, it's just to meet google requirements
