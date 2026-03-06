@@ -28,6 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+
+        // Close menu when clicking or tapping outside
+        const closeMenu = (event) => {
+            if (navMenu.classList.contains('active') && !navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            }
+        };
+
+        document.addEventListener('click', closeMenu);
+        document.addEventListener('touchstart', closeMenu);
     }
 
     // Hero Slideshow

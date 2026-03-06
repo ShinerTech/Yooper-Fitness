@@ -489,7 +489,7 @@ footer {
     border-radius: 50px;
     box-shadow: var(--shadow-lg);
     font-weight: 800;
-    z-index: 1001;
+    z-index: 990;
     animation: pulse 2s infinite;
 }
 
@@ -526,15 +526,18 @@ footer {
     .nav-menu {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 100%;
+        right: -300px;
+        width: 300px;
         height: 100vh;
-        background: var(--primary);
+        background: var(--primary-dark);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        transition: 0.4s ease-in-out;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5rem 1.5rem 2rem;
+        gap: 1.5rem;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        max-width: 85vw;
     }
 
     .nav-menu.active {
@@ -542,10 +545,49 @@ footer {
     }
 
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .header-top {
         display: none;
+    }
+
+    .hero {
+        min-height: 400px;
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-content .btn {
+        display: block;
+        margin: 0.5rem auto !important;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .fab-signup {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .testimonial-card,
+    .location-card {
+        padding: 1.5rem;
     }
 }
