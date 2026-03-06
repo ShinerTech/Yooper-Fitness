@@ -326,6 +326,14 @@ header.main-header .container {
     box-shadow: var(--shadow-lg);
 }
 
+.location-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 .location-card h3 {
     color: var(--primary);
     margin-bottom: 0.5rem;
