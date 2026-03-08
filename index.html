@@ -61,11 +61,11 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-slider">
-      <img src="./Images/Hero/VBE_1259.jpg" alt="Gym Interior" class="active">
-      <img src="./Images/Hero/VBE_1264.jpg" alt="Fitness Training">
-      <img src="./Images/Hero/VBE_1271.jpg" alt="Workout Equipment">
-      <img src="./Images/Hero/VBE_1272.jpg" alt="Yooper Fitness Community">
-      <img src="./Images/Hero/VBE_1280.jpg" alt="Strength Training">
+      <img src="./Images/Hero/VBE_1259.webp" alt="Gym Interior" class="active" fetchpriority="high">
+      <img src="./Images/Hero/VBE_1264.webp" alt="Fitness Training" loading="lazy">
+      <img src="./Images/Hero/VBE_1271.webp" alt="Workout Equipment" loading="lazy">
+      <img src="./Images/Hero/VBE_1272.webp" alt="Yooper Fitness Community" loading="lazy">
+      <img src="./Images/Hero/VBE_1280.webp" alt="Strength Training" loading="lazy">
     </div>
     <div class="hero-content">
       <h1>Welcome to Yooper Fitness!</h1>
@@ -92,7 +92,7 @@
         </div>
         <div class="intro-image">
           <img src="./wp-content/uploads/2021/11/3-1-1024x768.jpg" alt="Gym Equipment"
-            style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+            style="border-radius: 20px; box-shadow: var(--shadow-lg);" loading="lazy">
         </div>
       </div>
     </div>
@@ -123,27 +123,56 @@
   <!-- Reviews Section -->
   <section class="section reviews-section">
     <div class="container text-center">
-      <h2 class="uppercase" style="margin-bottom: var(--space-lg);">What Our Members Say</h2>
-      <div class="card-grid testimonial-grid">
-        <div class="testimonial-card">
-          <h3 class="testimonial-title">"Very awesome gym"</h3>
-          <p class="testimonial-text">Very awesome gym! Clean, has all the new equipment you'd need. My husband and I
-            were from out of town visiting and used the gym, would definitely consider a membership here if we lived
-            closer. Highly recommend!!</p>
-          <div class="testimonial-author">- Brittany C.</div>
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Very clean environment"</h3>
+            <p class="testimonial-text">Very clean environment, friendly staff. Owner is an awesome lady who will work
+              with you. The equipment was always sterile.</p>
+            <div class="testimonial-author">Claude</div>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Super friendly! Oh, and clean."</h3>
+            <p class="testimonial-text">Very nice place and super friendly! Oh, and clean. I am very happy to come here,
+              I
+              would definitely recommend this gym to other people. The gift shop is really nice and affordable as well.
+            </p>
+            <div class="testimonial-author">Ryan</div>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Absolutely 5-Stars!!"</h3>
+            <p class="testimonial-text">Everything about Yooper Fitness is first class! The entire facility is bright,
+              clean, and inviting. I saw people at all stages of physical fitness and everyone I talked to was ready to
+              help.</p>
+            <div class="testimonial-author">Michael</div>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Great place, clean environment"</h3>
+            <p class="testimonial-text">Great place! Clean, adorable, positive environment with a wide variety of
+              equipment, especially for a small town... Making me healthier by the day... Thank you, Yooper Fitness!
+            </p>
+            <div class="testimonial-author">Shawn</div>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Awesome gym"</h3>
+            <p class="testimonial-text">Awesome gym. Thanks for having us!</p>
+            <div class="testimonial-author">Justin</div>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="testimonial-title">"Nice, clean place"</h3>
+            <p class="testimonial-text">Nice, clean place. Owners are always very helpful.</p>
+            <div class="testimonial-author">Nikki</div>
+          </div>
         </div>
-        <div class="testimonial-card">
-          <h3 class="testimonial-title">"I couldn't be happier"</h3>
-          <p class="testimonial-text">I couldn't be happier with a hometown gym! Staff is incredibly kind and keep the
-            place very clean. Has everything you need for all skill levels and ages. A very welcoming gym where you
-            don't feel uncomfortable or out of place!</p>
-          <div class="testimonial-author">- Paige M.</div>
-        </div>
-        <div class="testimonial-card">
-          <h3 class="testimonial-title">"Seriously one of the best"</h3>
-          <p class="testimonial-text">Seriously one of the best gyms in the Midwest. If you live in the UP, you know how
-            hard it can be to find community. Here, everyone lifts each other up.</p>
-          <div class="testimonial-author">- Mike D.</div>
+
+        <div class="slider-controls">
+          <button class="slider-btn prev" aria-label="Previous Slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots"></div>
+          <button class="slider-btn next" aria-label="Next Slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
       <a href="https://www.google.com/search?q=yooper+fitness" target="_blank" class="btn btn-outline"
