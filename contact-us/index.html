@@ -151,7 +151,7 @@
         <!-- Form -->
         <div class="contact-form-wrapper">
           <h2 class="uppercase" style="margin-bottom: 2rem;">Send a Message</h2>
-          <form action="#" method="POST">
+          <form id="contactForm" action="#" method="POST">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -272,6 +272,28 @@
 
   <!-- Scripts -->
   <script src="../assets/js/main.js?v=3"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const location = document.getElementById('location').value;
+      const message = document.getElementById('message').value;
+
+      const subject = encodeURIComponent(`Website Inquiry from ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Location Preference: ${location}\n\n` +
+        `Message:\n${message}`
+      );
+
+      window.location.href = `mailto:YF@YooperFitness.net?subject=${subject}&body=${body}`;
+
+      // Optional: Show a quick feedback message
+      alert('Your email client will now open with your message. Please click "Send" in your email app to complete the request!');
+    });
+  </script>
 </body>
 
 </html>
