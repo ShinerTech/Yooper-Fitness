@@ -191,12 +191,13 @@ ul {
 /* Main Header */
 header.main-header {
     background: var(--primary);
-    padding: 0.75rem 0;
+    padding: 0.25rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-sm);
 }
+
 
 header.main-header .container {
     display: flex;
@@ -205,9 +206,11 @@ header.main-header .container {
 }
 
 .logo img {
-    height: 75px;
+    height: 95px;
     width: auto;
+    transition: var(--transition);
 }
+
 
 .nav-menu {
     display: flex;
@@ -615,8 +618,9 @@ footer {
 
 @media (max-width: 768px) {
     header.main-header {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
+
 
     .menu-toggle {
         display: block;
